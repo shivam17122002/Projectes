@@ -17,6 +17,7 @@ print("""Choices are:
 1. Rock
 2. Paper
 3. Scissors""")
+while True:
 choice = int(input("Enter your choice number(1-3): "))
 while choice > 3 or choice < 1:
    choice = int(input("Enter valid input: "))
@@ -67,3 +68,10 @@ print("Scores are: ")
 print(name,"'s score is", user_score)
 print("Computer's score is", comp_score)
 print("ties are",ties)
+
+repeat = input("Do you want to play again ?")
+if repeat == "No" or repeat =="No":
+   break
+
+print("Game over!")
+print("Thanks")
